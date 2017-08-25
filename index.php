@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" <?php language_attributes(); ?>>
 
 <head>
     <meta charset="utf-8">
@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apros - Wordpress</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/foundation-icons.css">
-    <link href="css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/foundation-icons.css">
+    <link href="<?php bloginfo('template_url'); ?>/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -19,12 +20,12 @@
             <div class="large-12 large-centered medium-12 small-12 columns">
                <div class="title-bar" data-responsive-toggle="menu_bar" data-hide-for="medium">
                     <button class="menu-icon" type="button" data-toggle="menu_bar"></button>
-                    <div class="title-bar-title"><img src="images/logo-main.png" alt=""></div>
+                    <div class="title-bar-title"><img src="<?php bloginfo('template_url'); ?>images/logo-main.png" alt=""></div>
                </div>
                 <div id="menu_bar" class="top-bar" data-animate="slide-in-down slide-out-up">
                     <div class="top-bar-left">
                         <ul class="menu">
-                            <li class="menu-text"><img src="images/logo-main.png" alt=""></li>
+                            <li class="menu-text"><img src="<?php bloginfo('template_url'); ?>images/logo-main.png" alt=""></li>
                             <li><a href="#header">Inicio</a></li>
                             <li><a href="#nosotros">Nosotros</a></li>
                             <li><a href="#catalogo">Producto</a></li>
@@ -57,8 +58,8 @@
                     <div class="large-7 small-12 medium-12 columns">
                         <div id="sobre_nosotros">
                             <div id="multimedia_presentacion">
-                                <img src="images/hands.png" alt="" id="img_nosotros">
-                                <button id="video_open" data-open="video_nosotros"><img src="images/thumbnail.png" alt=""></button>
+                                <img src="<?php bloginfo('template_url'); ?>/images/hands.png" alt="" id="img_nosotros">
+                                <button id="video_open" data-open="video_nosotros"><img src="<?php bloginfo('template_url'); ?>/images/thumbnail.png" alt=""></button>
                                 <div class="reveal" id="video_nosotros" data-reveal>
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/7Bmvtq19G98" frameborder="0" allowfullscreen></iframe>
                                     <button class="close-button" data-close aria-label="Close reveal" type="button">
@@ -146,22 +147,22 @@
                                                     <ul class="orbit-container">
                                                         <li class="is-active orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -191,10 +192,10 @@
                                 <div class="row">
                                     <div class="links_interes">
                                         <ul>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
                                             <li><a href="">CONTACTAR</a></li>
                                         </ul>
                                     </div>
@@ -240,22 +241,22 @@
                                                     <ul class="orbit-container">
                                                         <li class="is-active orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -285,10 +286,10 @@
                                 <div class="row">
                                     <div class="links_interes">
                                         <ul>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
                                             <li><a href="">CONTACTAR</a></li>
                                         </ul>
                                     </div>
@@ -334,22 +335,22 @@
                                                     <ul class="orbit-container">
                                                         <li class="is-active orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -379,10 +380,10 @@
                                 <div class="row">
                                     <div class="links_interes">
                                         <ul>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
                                             <li><a href="">CONTACTAR</a></li>
                                         </ul>
                                     </div>
@@ -428,22 +429,22 @@
                                                     <ul class="orbit-container">
                                                         <li class="is-active orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -473,10 +474,10 @@
                                 <div class="row">
                                     <div class="links_interes">
                                         <ul>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
                                             <li><a href="">CONTACTAR</a></li>
                                         </ul>
                                     </div>
@@ -522,22 +523,22 @@
                                                     <ul class="orbit-container">
                                                         <li class="is-active orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                         <li class="orbit-slide">
                                                             <div class="text-center mini_img">
-                                                                <img src="images/picture-icon.svg" alt="">
+                                                                <img src="<?php bloginfo('template_url'); ?>/images/picture-icon.svg" alt="">
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -567,10 +568,10 @@
                                 <div class="row">
                                     <div class="links_interes">
                                         <ul>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
-                                            <li><a href="">Lorem ipsum dolor <img src="images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
+                                            <li><a href="">Lorem ipsum dolor <img src="<?php bloginfo('template_url'); ?>/images/icon-download.svg" alt=""></a></li>
                                             <li><a href="">CONTACTAR</a></li>
                                         </ul>
                                     </div>
@@ -694,7 +695,7 @@
                     <div id="map"></div>
                 <div id="cajaDireccion">
                     <div id="direccion">
-                       <img src="images/icon-location.svg" alt="">
+                       <img src="<?php bloginfo('template_url'); ?>/images/icon-location.svg" alt="">
                         Av. Republica de Panamá.
                     </div>
                 </div>
@@ -703,28 +704,29 @@
         <div class="row">
             <div class="large-11 large-centered columns">
                 <ul id="redes">
-                    <li><a href="#"><img src="images/icon-fb.svg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icon-linkedin.svg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icon-youtube.svg" alt=""></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-fb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-linkedin.svg" alt=""></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-youtube.svg" alt=""></a></li>
                 </ul>
                 <p>COMPANY 2017 - Copyright © all Rights Reserved</p>
             </div>
         </div>
-        <img id="icon-footer" src="images/hojas-background-footer.png" alt="">
+        <img id="icon-footer" src="<?php bloginfo('template_url'); ?>/images/hojas-background-footer.png" alt="">
     </footer>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/what-input.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/foundation.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/aos.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDORdjJQGe-pf5KJw0Nzq06x5RA-NkViWs&callback=initMap"></script>
-    <script src="js/app.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>
     <script>
     AOS.init({
         duration: 1200,
     });
   </script>
+    <?php wp_footer(); ?>
 </body>
 
 </html>
